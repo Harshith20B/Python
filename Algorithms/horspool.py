@@ -20,8 +20,8 @@ def horspool(Pattern,str,ST):
     return -1
 
 def main():
-    Pattern = "_Example"
-    Text = "here is an _Example of horspool algorithm example"
+    Pattern = "Example"
+    Text = "here is an Example of horspool algorithm example"
     ST = [0] * 128  
     shiftTable(Pattern, ST)
     position = horspool(Pattern, Text, ST)

@@ -8,7 +8,7 @@ def kruskal(graph,n):
         min=999
         for i in range(n):
             for j in range(n):
-                if(graph[i][j]<min):
+                if(i!=j and graph[i][j]<min):
                     min=graph[i][j]
                     u=i
                     v=j

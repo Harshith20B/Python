@@ -2,7 +2,7 @@ def show(w,p,n,m,v):
     i=n
     j=m
     profit=v[n][m]
-    while(i>0 and profit>0):
+    while(i>0 and j>=0):
         if(v[i][j]!=v[i-1][j]):
             print(f"Item weight : {w[i]} Item Profit : {p[i]}")
             j=j-w[i]

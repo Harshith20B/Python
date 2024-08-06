@@ -1,4 +1,3 @@
-# Heap Sort
 def heapify(arr, n, i):
     largest_index = i
     left_index = 2*i + 1

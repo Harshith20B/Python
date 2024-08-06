@@ -1,7 +1,7 @@
 def show(w,p,n,m,v):
     i=n
     j=m
-    profit=v[n][m]
+    #profit=v[n][m]
     while(i>0 and j>=0):
         if(v[i][j]!=v[i-1][j]):
             print(f"Item weight : {w[i]} Item Profit : {p[i]}")
@@ -11,7 +11,7 @@ def show(w,p,n,m,v):
 # m - weight of the bag
 
 def knapsack(w,p,n,m):
-    # n - rows m - columns
+    # n+1 - rows m+1 - columns
     v = [[0 for x in range(m+1)] for x in range(n+1)]
     for i in range(n+1):
         for j in range(m+1):

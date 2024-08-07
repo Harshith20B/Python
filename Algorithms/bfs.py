@@ -4,6 +4,7 @@ def bfs(graph,n,u):
     for i in range(n):
         visited.append(0)
     queue.append(u)
+    visited[u]=1
     while queue:
         u=queue.pop(0)
         print(u)
